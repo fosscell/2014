@@ -166,7 +166,6 @@ article
 	position: absolute;
 	width:50%;
 	height:100%;
-	background-color: white;
 }
 
 #icon_panel
@@ -275,18 +274,18 @@ article
 
 .sec_wrap_title,.sec_wrap_desc
 {
-	width:7em;
+	width:100%;
 	color:#555;
-	font-size:1em;
+	font-size:.7em;
 	display:block;
 	margin:auto;
 	text-align:center; 
+	margin-top:45%;
 }
 
 .sec_wrap_desc
 {
-	font-size:.4em;
-	width:20em;
+	margin-top:3%;
 }
 
 .sec_wrap span img
