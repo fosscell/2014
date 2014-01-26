@@ -17,16 +17,6 @@ function resize()
 	/* scroll-wrap-inner adjustment */
 	$(".circle").css({'margin-top':(h-250)/2});
 
-	/* keypress sync */
-	window.addEventListener("keydown", function(e) {
-    // space and arrow keys
-	    var index=[38, 40].indexOf(e.keyCode);
-	    if(index > -1) 
-	    {
-	    	wheel(e,index+1);
-	    }
-	}, false);
-
 	/* fix height adjustment */
 	$(".fix").css({'height':h});
 
@@ -38,9 +28,6 @@ function resize()
 
 	/* window height adjustment */
 	$('.window').css({'height':(h/2)});
-
-	/* window span top margin adjustment */
-	$('.window span').css({'margin-top':(h/2-85)/2});
 
 	/* font adjustments */
 	$('body').css({'font-size':fs});
@@ -68,21 +55,6 @@ function wheel(event,index) {
     }
 
     var scrollTop=$(window).scrollTop();
-
-    if(scrollTop>=0&&scrollTop<=5*h/2)
-    {
-	    $('#bg1').css({'display':'block'});
-	    $('#bg2').css({'display':'none'});
-    }
-    else if(scrollTop>=5*h/2&&scrollTop<=5*h)
-    {
-	    $('#bg2').css({'display':'block'});
-	    $('#bg1').css({'display':'none'});
-    }
-	else if($(window).scrollTop()>=5*h)
-    {
-	    $('#bg2').css({'display':'none'});
-    }
 }
 
 function handle(delta,scrollTop) {
