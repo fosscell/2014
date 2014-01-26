@@ -17,16 +17,6 @@ function resize()
 	/* scroll-wrap-inner adjustment */
 	$(".circle").css({'margin-top':(h-250)/2});
 
-	/* keypress sync */
-	window.addEventListener("keydown", function(e) {
-    // space and arrow keys
-	    var index=[38, 40].indexOf(e.keyCode);
-	    if(index > -1) 
-	    {
-	    	wheel(e,index+1);
-	    }
-	}, false);
-
 	/* fix height adjustment */
 	$(".fix").css({'height':h});
 
@@ -39,9 +29,6 @@ function resize()
 	/* window height adjustment */
 	$('.window').css({'height':(h/2)});
 
-	/* window span top margin adjustment */
-	$('.window span').css({'margin-top':(h/2-85)/2});
-
 	/* font adjustments */
 	$('body').css({'font-size':fs});
 
@@ -53,60 +40,32 @@ function resize()
 
 }
 
-/* scroll assist */
-if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-window.onmousewheel = document.onmousewheel = wheel;
-
-function wheel(event,index) {
-    var delta = 0;
-    if (event.wheelDelta) delta = event.wheelDelta / 120;
-    else if (event.detail) delta = -event.detail / 3;
-
-    if(index)
-    {
-    	delta=(index==2)?-1:1;
-    }
-
-    var scrollTop=$(window).scrollTop();
-
-    if(scrollTop>=0&&scrollTop<=5*h/2)
-    {
-	    $('#bg1').css({'display':'block'});
-	    $('#bg2').css({'display':'none'});
-    }
-    else if(scrollTop>=5*h/2&&scrollTop<=5*h)
-    {
-	    $('#bg2').css({'display':'block'});
-	    $('#bg1').css({'display':'none'});
-    }
-	else if($(window).scrollTop()>=5*h)
-    {
-	    $('#bg2').css({'display':'none'});
-    }
-}
-
-function handle(delta,scrollTop) {
-	animating=1;
-	var st=(delta<0)?scrollTop/h+1:scrollTop/h-1;
-	    $('html, body').stop().animate({
-	        scrollTop:st*h
-	    },1500,function(){animating=0;});		
-}
-
 $(document).ready(function()
 {
-	$('#prev_sponsors_icon').click(function()
+	$('#speakers_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:14*h
+	        scrollTop:5*h
 	    },1500,function(){animating=0;});
 	});
-	$('#contacts_icon').click(function()
+	$('#tickets_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:15*h
+	        scrollTop:6*h
 	    },1500,function(){animating=0;});	
-	});	
+	});
+	$('#sponsors_icon').click(function()
+	{
+	    $('html, body').stop().animate({
+	        scrollTop:7*h
+	    },1500,function(){animating=0;});	
+	});
+		$('#contacts_icon').click(function()
+	{
+	    $('html, body').stop().animate({
+	        scrollTop:8*h
+	    },1500,function(){animating=0;});	
+	});		
 	$('.lg').click(function()
 	{
 	    $('html, body').stop().animate({

@@ -95,7 +95,6 @@ text-decoration:none;color:#fff;
 
 #hd1,#hd2,#hd3
 {
-	color:#fff;
 	margin-right:50px;
 	text-align:right;
 }
@@ -120,7 +119,6 @@ article
 	margin-left:5%; 
 	font-size:100%;
 	color:white;
-	text-shadow:2px 2px #000;
 	width:100%;
 }
 
@@ -128,15 +126,25 @@ article
 {
 	overflow: hidden;
 	position:relative;
-	text-shadow:2px 2px #000;
 	width:100%;
+	color:#333;
 }
 
 .window span
 {
 	text-align: center;	
-	color:#fff;
 	display:block;
+	width:50%;
+	height:100%;
+	font-size: .5em; 
+	padding:5% 2% 2% 2%;
+	float:right;
+}
+
+.window div
+{
+	width:50%;
+	height:100%;
 }
 
 .fix
@@ -306,15 +314,14 @@ article
 {
 	margin:auto;
 	margin-top:2%;
-	width:80%;
+	width:75%;
 	height:80%;
 	overflow:none;
 }
 
 #contacts>span
 {
-	width:21%;
-	margin-left: 5%;
+	width:30%;
 	height:16%;
 	padding:1%;
 	font-size:.25em;
