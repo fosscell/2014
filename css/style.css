@@ -1,0 +1,379 @@
+@font-face
+{
+	font-family: 'roboto';
+	src:url('../fonts/roboto.woff');
+}
+
+*
+{
+	margin:0;
+	font-family: roboto; 
+	background-repeat: no-repeat;
+}
+
+html
+{
+	overflow:auto;
+}
+
+section
+{
+	position:relative;
+	overflow:hidden;
+	min-height:300px;
+	min-width:530px;
+}
+
+.section_wrap section
+{
+	background-color: #fff;
+	background-size: contain;
+	position:relative;
+}
+
+#header
+{
+	height:35px;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:2; 
+}
+
+#logo
+{
+	position:fixed;
+	top:0%;
+	cursor:pointer;
+	left:2%;
+	width:2.5%;
+	z-index:6; 	
+}
+
+#menu
+{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:auto;
+	padding:.5%;
+	background-color:#111;
+	border-bottom:1px solid #333;
+	z-index:5;
+	font-size:.27em;
+	text-align: right;
+	color:#fff;
+}
+
+#menu span:hover
+{
+	font-weight: bold;
+	cursor:pointer;
+}
+
+#contacts_icon
+{
+	margin-right:5%;
+}
+
+#prev_sponsors_icon,#contacts_icon
+{
+	cursor:pointer;
+}
+
+#bg1
+{
+	display:none;
+	background-image: url('../img/oat_crowd.jpg');
+	background-size: contain;	
+}
+
+#bg2
+{
+	display:none;
+	background-image: url('../img/freestyle.jpg');
+	background-size: contain;	
+}
+
+#hd1,#hd2,#hd3
+{
+	color:#fff;
+	margin-right:50px;
+	text-align:right;
+}
+
+#hd1
+{
+	margin-top:50px;
+}
+
+#hd3
+{
+	font-size:.6em;
+}
+
+article
+{
+	position: absolute;
+	top:40%;
+	margin-left:5%; 
+	font-size:100%;
+	color:white;
+	text-shadow:2px 2px #000;
+	width:100%;
+}
+
+.window
+{
+	overflow: hidden;
+	position:relative;
+	text-shadow:2px 2px #000;
+	width:100%;
+}
+
+.window span
+{
+	text-align: center;	
+	color:#fff;
+	display:block;
+}
+
+.fix
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+.fix>div
+{
+	width:1000px;
+	height:100%;
+	margin:auto;
+}
+
+.circle
+{
+	float:left;
+	margin-left:25px;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #a0a0a0;
+}
+
+.bg_pic
+{
+	position: absolute;
+	width:50%;
+	height:100%;
+	background-color: white;
+}
+
+#icon_panel
+{
+	width:100%;
+	margin:auto;
+	margin-top:15%; 
+}
+
+#icon_panel>div>span
+{
+	float:left;
+	background-color:#fff;
+	width:20%;
+	padding:1.5% 0 3% 1%;
+}
+
+#icon_panel_ic
+{
+	width:84%;
+	height:89%;
+	margin:auto;
+	font-size:.25em;
+}
+
+.icon_content
+{
+	text-align:center;
+	width:100%;
+	display:block;
+}
+
+#icon_panel span img
+{
+	margin:auto;
+	display:block;
+}
+
+#icon_panel>span>span
+{
+	font-size:.3em;
+	color:#222;
+	text-align:center;
+	display:block;
+}
+
+#icon_panel_desc
+{
+	font-size:.45em;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.section_wrap
+{
+	position:absolute;
+	width:100%;
+}
+
+#section_wrap_alpha
+{
+	top:0;
+}
+
+.wrap_inner
+{
+	width:1000px;
+	height:100%;
+	margin:auto;
+}
+
+.wrap_inner span
+{
+	position:relative;
+	text-align:center;
+	color:#fff;
+	float:left;
+	width:500px;
+}
+
+.wrap_inner span:first-child
+{
+	width:200px;
+}
+
+.wrap_inner span:last-child
+{
+	width:300px;
+}
+
+.sec_wrap
+{
+	width:50%;
+	float:right;
+}
+
+.sec_wrap_img
+{
+	width:3.5em;
+	height:3em;
+	display:block;
+	margin:auto;
+	padding:10px;
+	overflow:hidden;
+}
+
+.sec_wrap_title,.sec_wrap_desc
+{
+	width:7em;
+	color:#555;
+	font-size:1em;
+	display:block;
+	margin:auto;
+	text-align:center; 
+}
+
+.sec_wrap_desc
+{
+	font-size:.4em;
+	width:20em;
+}
+
+.sec_wrap span img
+{
+	display:block;
+	margin:auto;
+	width:3.5em;
+}
+
+#contacts,#prev_sponsors
+{
+	margin:auto;
+	margin-top:2%;
+	width:80%;
+	height:80%;
+	overflow:none;
+}
+
+#contacts>span
+{
+	width:21%;
+	height:16%;
+	padding:1%;
+	font-size:.25em;
+	float:left;
+	text-align:center;
+}
+
+#contacts>span>span
+{
+	font-weight:bold;
+}
+
+#scroll_wrap section
+{
+	z-index:2;
+}
+
+#scroll_wrap img
+{
+	margin-top:9%;
+	margin-left:3%;
+}
+
+#prev_sponsors span
+{
+	float:left;
+	width:25%;
+	height:25%;
+	text-align:center;
+}
+
+#prev_sponsors img
+{
+	width:50%;
+}
+
+.fb-like
+{
+	margin:3% 5% 0 0%;
+	padding:10px;
+	float:right;
+}
+
+#prv_spn_ttl
+{
+	width:100%;
+	text-align: center;
+	font-size:.6em;
+	color:#000;
+	display:block;
+	margin-top:2%;
+}
+
+#nitc_logo
+{
+	position: absolute;
+	bottom: 22%;
+	left: 48%;
+}
+
+#footer
+{
+	border-top:1px solid #999;
+	background-image:url('../img/mb.png');
+	background-size:200%;
+	background-color:#eee;
+}
