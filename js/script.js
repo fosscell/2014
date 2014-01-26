@@ -69,15 +69,6 @@ function wheel(event,index) {
 
     var scrollTop=$(window).scrollTop();
 
-	if(scrollTop>=7*h&&scrollTop<=13*h)
-    {
-	    if (event.preventDefault) event.preventDefault();
-	    event.returnValue = false;
-
-	    if(!animating)
-	    	handle(delta,scrollTop);
-    }
-
     if(scrollTop>=0&&scrollTop<=5*h/2)
     {
 	    $('#bg1').css({'display':'block'});
