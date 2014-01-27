@@ -343,7 +343,7 @@ article a
 #contacts>span
 {
 	width:30%;
-	height:16%;
+	height:20%;
 	padding:1%;
 	font-size:.25em;
 	float:left;
@@ -409,6 +409,13 @@ article a
 	border-top:1px solid #999;
 
 	background-color:#eee;
+}
+
+#footer a
+{
+	color:#000;
+	text-decoration:none;
+	font-style: italic;
 }
 
 

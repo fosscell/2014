@@ -48,7 +48,7 @@ $(document).ready(function()
 	        scrollTop:5*h
 	    },1500,function(){animating=0;});
 	});
-	$('#tickets_icon').click(function()
+	$('.wait').click(function()
 	{
 	    $('html, body').stop().animate({
 	        scrollTop:6*h
