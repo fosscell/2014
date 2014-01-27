@@ -45,25 +45,25 @@ $(document).ready(function()
 	$('#speakers_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:5*h
+	        scrollTop:11*h/2
 	    },1500,function(){animating=0;});
 	});
 	$('.wait').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:6*h
+	        scrollTop:13*h/2
 	    },1500,function(){animating=0;});	
 	});
 	$('#sponsors_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:7*h
+	        scrollTop:15*h/2
 	    },1500,function(){animating=0;});	
 	});
 		$('#contacts_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:8*h
+	        scrollTop:19*h/2
 	    },1500,function(){animating=0;});	
 	});		
 	$('.lg').click(function()
