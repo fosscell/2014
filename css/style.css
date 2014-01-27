@@ -26,13 +26,18 @@ section
 	position:relative;
 }
 
-#biglogo {
+#biglogo 
+{
+	position: absolute;
+	margin: auto;
+	height: 100%;
+	width: 50%;
+}
 
-position: absolute;
-margin: auto;
-height: 100%;
-width: 100%;
-background-image: url('../img/nitc.png');
+#biglogo img
+{
+	float:right;
+	margin:35%;
 }
 
 #header
@@ -104,8 +109,10 @@ text-decoration:none;color:#fff;
 
 #hd1,#hd2,#hd3
 {
-	margin-right:50px;
-	text-align:right;
+	margin-right: 5%;
+	text-align: left;
+	width: 50%;
+	float: right;
 }
 #hd2 {
 font-size: .5em;
@@ -113,7 +120,7 @@ font-size: .5em;
 
 #hd1
 {
-	margin-top:50px;
+	margin-top:17%;
 }
 
 #hd3
@@ -402,4 +409,15 @@ article a
 	border-top:1px solid #999;
 	background-size:200%;
 	background-color:#eee;
+}
+
+#cfp
+{
+	position:absolute;
+	bottom:20%;
+	left:35%;
+	padding:1%;
+	font-size: .7em;
+	color:#000;
+	background-color:#fff;
 }
