@@ -79,7 +79,8 @@ text-decoration:none;color:#fff;
 }
 #menu span:hover
 {
-	font-weight: bold;
+	
+  color:rgba(255,255,255,0.8);
 	cursor:pointer;
 }
 
