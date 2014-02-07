@@ -438,8 +438,11 @@ article a
 	border-collapse:collapse;
 	margin: auto;
 	border-spacing:0;
+	width: 60%;
+	font-size: 18px;	
 }
 	
+
 .tg td{
 padding:10px 5px;
 border-style:solid;
