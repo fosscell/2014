@@ -487,9 +487,17 @@ tr>td:first-child
 	font-size:.75em;
 	text-align:center; 
 	background-color:#f5f5f5; 
+	color:#333;
 }
 tr>td>span{
-font-style: italic;
+	color:#555;
+	font-size:0.8em; 
+}
+
+td>a
+{
+	text-decoration:none;
+	color:#333;
 }
 
 .yellow
