@@ -434,3 +434,31 @@ article a
 	background-color:rgba(0,0,0,0.2);
 }
 
+.tg  {
+	border-collapse:collapse;
+	margin: auto;
+	border-spacing:0;
+}
+	
+.tg td{
+padding:10px 5px;
+border-style:solid;
+border-width:1px;
+overflow:hidden;
+word-break:normal;
+}
+
+.tg th
+{
+	font-weight:normal;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+}
+.tg .tg-s6z2
+{
+	text-align:center;
+}
+
