@@ -45,7 +45,7 @@ $(document).ready(function()
 	$('#speakers_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:11*h/2
+	        scrollTop:$('#speakers_tab').offset().top
 	    },1500,function(){animating=0;});
 	});
 	$('.wait').click(function()
@@ -57,13 +57,13 @@ $(document).ready(function()
 	$('#sponsors_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:15*h/2
-	    },1500,function(){animating=0;});	
+	        scrollTop:$('#sponsors').offset().top
+	    },1500,function(){animating=0;});
 	});
 		$('#contacts_icon').click(function()
 	{
 	    $('html, body').stop().animate({
-	        scrollTop:19*h/2
+	        scrollTop:$('#footer').offset().top
 	    },1500,function(){animating=0;});	
 	});		
 	$('.lg').click(function()

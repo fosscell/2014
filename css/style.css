@@ -434,21 +434,23 @@ article a
 	background-color:rgba(0,0,0,0.2);
 }
 
-.tg  {
+.tg
+{
 	border-collapse:collapse;
 	margin: auto;
 	border-spacing:0;
-	width: 60%;
-	font-size: 18px;	
+	width: 80%;
+	font-size:.3em;	
 }
 	
 
-.tg td{
-padding:10px 5px;
-border-style:solid;
-border-width:1px;
-overflow:hidden;
-word-break:normal;
+.tg td
+{
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
 }
 
 .tg th
@@ -460,13 +462,62 @@ word-break:normal;
 	overflow:hidden;
 	word-break:normal;
 }
-.tg .tg-s6z2
+
+#normalheight 
 {
-	text-align:center;
+	height: auto;
 }
 
-#normalheight {
-height: auto;
+td,th
+{
+	border-color:#aaa;
+	text-align:left; 
+}
 
+th
+{
+	text-align:center;
+	color:#000; 
+	background-color:#f5f5f5;
+}
 
+tr>td:first-child
+{
+	width:15%;
+	font-size:.75em;
+	text-align:center; 
+	background-color:#f5f5f5; 
+}
+
+.yellow
+{
+	background-color:#fcf4bb; 
+}
+
+.red
+{
+	background-color:#fcd4bd;
+}
+
+.blue
+{
+	background-color:#def9df;
+	text-align:center;  
+}
+
+.green
+{
+	background-color:#a3f59d; 
+}
+
+#legend
+{
+	height:100%;
+	width:;
+}
+
+.color
+{
+	height:5%;
+	width:5%;
 }
