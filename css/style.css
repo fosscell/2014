@@ -420,7 +420,7 @@ article a
 {
 	position:absolute;
 	bottom:20%;
-	left:41%;
+	left:29%;
 	padding:1%;
 	font-size: .7em;
 	color:#fff;
@@ -442,8 +442,27 @@ article a
 	width: 80%;
 	font-size:.3em;	
 }
+.tgnew
+{
+	border-collapse:collapse;
+	margin: auto;
+	border-spacing:0;
+	width: 100%;
+	height: 100%;
+	font-size:.3em;	
+}	
+.tgnew tr
+{
 	
-
+	height: 100%;
+		
+}	
+.tgnew td
+{
+	
+	height: 100%;
+		
+}	
 .tg td
 {
 	padding:10px 5px;
